@@ -2,7 +2,7 @@ package kotlinsource
 
 import java.util.*
 
-class MeetingRoom {
+class Q1_MeetingRoom {
     fun solve(intervals: Array<Interval>): Boolean {
         Arrays.sort(intervals, Comparator { o1, o2 ->  o1.start - o2.end})
         for(i in 1 until intervals.size) {
@@ -28,7 +28,7 @@ class Interval (var start:Int, var end:Int) {
 
 fun main(args: Array<String>) {
 
-    val meetingRoom = MeetingRoom()
+    val meetingRoom = Q1_MeetingRoom()
 
     val interval1 = Interval(15, 20)
     val interval2 = Interval(5, 10)

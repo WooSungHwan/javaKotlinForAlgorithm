@@ -2,10 +2,10 @@ package javasource;
 
 import java.util.Arrays;
 
-public class MeetingRoom {
+public class Q1_MeetingRoom {
 
     public static void main(String[] args) {
-        MeetingRoom a = new MeetingRoom();
+        Q1_MeetingRoom a = new Q1_MeetingRoom();
 
         // false 예제
         Interval intervals1 = new Interval(15, 20);
