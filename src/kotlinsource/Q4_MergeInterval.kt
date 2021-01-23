@@ -24,7 +24,7 @@ fun merge(intervals:List<Interval>):List<Interval> {
     val intervals = intervals.sortedBy { it.start }
     var result = ArrayList<Interval>();
     var before:Interval = intervals.get(0)
-    for (i in 1..intervals.size - 1) {
+    for (i in 1 until intervals.size) {
         var current = intervals.get(i)
         if (before.end >= current.start) {
             before.end = current.end;
